@@ -1,0 +1,40 @@
+// @include flex(center, null, null, wrap);
+@mixin flex($ai, $jc, $fd, $fw) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+// @include mobile
+// @include tablet
+// @include desktop
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// @include retina
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// @include section($pt, $pb)
+@mixin section($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
