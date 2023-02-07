@@ -1,0 +1,60 @@
+.container_addComments {
+  padding: 10px 10px 10px 10px;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.container_btn {
+  display: flex;
+
+//   flex-wrap: wrap;
+//   align-items: center;
+//   justify-content: space-between;
+  gap: 10px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.add__btn {
+  @include flex(center, center, null, null);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.88;
+//   padding-left: 32px;
+//   padding-right: 32px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 100%;
+  height: 35px;
+  color: rgba(0, 0, 0, 0.5);
+  background:#2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+//   margin: 0px 5px;
+  border: transparent;
+}
+
+.add_text_span{
+    @include flex(center, null, null, null);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  min-width: 10px;
+  height: 35px;
+  color: rgba(0, 0, 0, 1.0);
+}

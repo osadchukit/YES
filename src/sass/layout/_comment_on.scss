@@ -1,11 +1,21 @@
+.container_comment {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0 10px;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
 .comment {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 10px 5px 10px;
-//   margin-left: auto;
-//   margin-right: auto;
+  background:#d1d1d1;
   @include tablet {
     width: 768px;
   }
@@ -22,19 +32,115 @@
     justify-content: space-between;
 }
 
-.container_comment {
+.coment_number{
+    @include flex(center, center, null, null);
+    width: 30px;
+    height: 30px;
+    background:#a3a3a3;
+}
+
+.comment_on {
+  @include flex(center, center, null, null);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.comment_but{
+    height: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.comment_block {
   display: flex;
   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: space-between;
-  padding: 5px 10px 5px 10px;
-//   margin-left: auto;
-//   margin-right: auto;
+  // padding: 0px 10px 0 10px;
   @include tablet {
     width: 768px;
   }
   @include desktop {
     width: 1200px;
   }
+}
+
+.comment_text{
+  width: 100%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  height: 30vh;
+  // padding: 1em;
+  // font-size: 1.5em;
+  // text-align: left;
+  // border: 1px solid #000;
+
+  // box-sizing: border-box;
+
+  border-top: 0px;
+  padding-left: 10px;
+
+}
+
+
+
+
+/* Import Google font - Poppins */
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+// *{
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Poppins", sans-serif;
+// }
+// body{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: 100vh;
+//   background: linear-gradient(#4671EA, #AC34E7);
+// }
+// ::selection{
+//   color: #fff;
+//   background: #4671EA;
+// }
+// .wrapper{
+//   width: 470px;
+//   background: #fff;
+//   border-radius: 5px;
+//   padding: 25px 25px 30px;
+//   box-shadow: 8px 8px 10px rgba(0,0,0,0.06);
+// }
+// .wrapper h2{
+//   color: #4671EA;
+//   font-size: 28px;
+//   text-align: center;
+// }
+.wrapper textarea{
+  width: 100%;
+  resize: none;
+  height: 59px;
+  outline: none;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 0px;
+  border-radius: 5px;
+  max-height: 330px;
+  caret-color: #4671EA;
+  border: 1px solid #bfbfbf;
+  border-top: 0px;
+}
+// textarea::placeholder{
+//   color: #b3b3b3;
+// }
+// textarea:is(:focus, :valid){
+//   padding: 14px;
+//   border: 2px solid #4671EA;
+// }
+textarea::-webkit-scrollbar{
+  width: 0px;
 }
