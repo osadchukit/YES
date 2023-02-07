@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background:#d1d1d1;
+  background: #d1d1d1;
   @include tablet {
     width: 768px;
   }
@@ -24,19 +24,19 @@
   }
 }
 
-.comment_elem{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.comment_elem {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.coment_number{
-    @include flex(center, center, null, null);
-    width: 30px;
-    height: 30px;
-    background:#a3a3a3;
+.coment_number {
+  @include flex(center, center, null, null);
+  width: 30px;
+  height: 30px;
+  background: #a3a3a3;
 }
 
 .comment_on {
@@ -51,9 +51,9 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.comment_but{
-    height: 20px;
-    padding: 0 10px 0 10px;
+.comment_but {
+  height: 20px;
+  padding: 0 10px 0 10px;
 }
 
 .comment_block {
@@ -68,7 +68,7 @@
   }
 }
 
-.comment_text{
+.comment_text {
   width: 100%;
   height: 100px;
   resize: none;
@@ -83,11 +83,7 @@
 
   border-top: 0px;
   padding-left: 10px;
-
 }
-
-
-
 
 /* Import Google font - Poppins */
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -98,11 +94,11 @@
 //   font-family: "Poppins", sans-serif;
 // }
 // body{
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // min-height: 100vh;
-  // background: linear-gradient(#4671EA, #AC34E7);
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// min-height: 100vh;
+// background: linear-gradient(#4671EA, #AC34E7);
 // }
 // ::selection{
 //   color: #fff;
@@ -120,7 +116,7 @@
 //   font-size: 28px;
 //   text-align: center;
 // }
-.wrapper textarea{
+.wrapper textarea {
   width: 100%;
   resize: none;
   height: 59px;
@@ -130,7 +126,7 @@
   margin-top: 0px;
   border-radius: 5px;
   max-height: 330px;
-  caret-color: #4671EA;
+  caret-color: #4671ea;
   border: 1px solid #bfbfbf;
   border-top: 0px;
 }
@@ -141,6 +137,6 @@
 //   padding: 14px;
 //   border: 2px solid #4671EA;
 // }
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
   width: 0px;
 }
