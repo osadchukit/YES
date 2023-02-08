@@ -1,7 +1,7 @@
 .container_comment {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   @include tablet {
     width: 768px;
   }
@@ -33,14 +33,24 @@
 }
 
 .coment_number {
-  @include flex(center, center, null, null);
+  @include flex(
+    center,
+    center,
+    null,
+    null
+  );
   width: 30px;
   height: 30px;
   background: #a3a3a3;
 }
 
 .comment_on {
-  @include flex(center, center, null, null);
+  @include flex(
+    center,
+    center,
+    null,
+    null
+  );
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
